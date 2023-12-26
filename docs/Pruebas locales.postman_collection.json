@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "f0235f69-edc6-4f4d-8834-9488a2d95942",
+		"name": "Pruebas locales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "52076",
+		"_collection_link": "https://planetary-firefly-930702.postman.co/workspace/Databases-gateway~43a667a1-de26-450d-9b4f-443c6c36da5b/collection/52076-f0235f69-edc6-4f4d-8834-9488a2d95942?action=share&source=collection_link&creator=52076"
+	},
+	"item": [
+		{
+			"name": "Test básico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}:{{port}}/",
+					"host": [
+						"{{url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
