@@ -1,5 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express';
 import dotenv from 'dotenv'
+import cors from 'cors'
+
 import taskRoutes from './routes/tasks'
 import mysqlRoutes from './routes/mysql_gateway'
 
@@ -12,6 +14,7 @@ const app = express();
 const appServer = {
     crearServidor: () => {
         app.use(express.json())
+        app.use(cors())
         app.use('/tasks', taskRoutes)
         app.use('/mysql', mysqlRoutes)
         
