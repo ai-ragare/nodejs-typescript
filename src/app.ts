@@ -31,7 +31,7 @@ const appServer = {
     lanzarServidor: () => {
         const port = process.env.GAT_PORT || 3000;
         app.listen(port, () => {
-            console.log(`Server runnig at port: ${port}`)
+            console.log(`Server runnig at port*: ${port}`)
         })
     }
 }
